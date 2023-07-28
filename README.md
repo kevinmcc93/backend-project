@@ -67,7 +67,7 @@ The API uses GraphQL for data querying and manipulation. Below are the available
 #### Fetch All Users
 
 **Example query for users:**
-
+```
 query {
   users {
     id
@@ -81,9 +81,9 @@ query {
     }
   }
 }
-
+```
 **Example response for user query:**
-
+```
 {
   "data": {
     "users": [
@@ -109,11 +109,11 @@ query {
     ]
   }
 }
-
+```
 #### Fetch All Products
 
 **Example query for users:**
-
+```
 query {
   products {
     id
@@ -121,9 +121,9 @@ query {
     price
   }
 }
-
+```
 **Example response for products query:**
-
+```
 {
   "data": {
     "products": [
@@ -146,14 +146,14 @@ query {
     ]
   }
 }
-
+```
 #### Mutations
 
 - `createUser(name: String!, email: String!, age: Int!, productIds: [ID!]): User`: Creates a new user. The `productIds` parameter is optional and is used to associate existing products with the user.
 - `createProduct(name: String!, price: Float!): Product`: Creates a new product.
 
 **Example mutation to create a user:**
-
+```
 mutation {
   createUser(name: "Jane Smith", email: "jane@example.com", age: 25, productIds: ["4d73f697-8968-460e-ad32-9149a3d7154e", "2c6f4b99-fcc0-4a7f-84ac-a2e67a10c7ed"]) {
     id
@@ -167,10 +167,10 @@ mutation {
     }
   }
 }
-
+```
 
 **Example response for user creation mutation:**
-
+```
 {
   "data": {
     "createUser": {
@@ -193,9 +193,9 @@ mutation {
     }
   }
 }
-
+```
 **Example mutation to create a product:**
-
+```
 mutation {
   createProduct(name: "New Product", price: 24.99) {
     id
@@ -203,9 +203,9 @@ mutation {
     price
   }
 }
-
+```
 **Example response for product creation mutation:**
-
+```
 {
   "data": {
     "createProduct": {
@@ -215,3 +215,4 @@ mutation {
     }
   }
 }
+```
