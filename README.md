@@ -1,11 +1,17 @@
 ## Overview
 
-This project is meant to demonstrate my NestJS skills and understanding of web development with graphQL
-There should be two main items in the database, users and products
-The users should have certain properties, including an 'order', which contains a list of products
-You should be able to insert data to Users, and Product entities using the mutations
-Additionally, you can query the entire list of users and see the products in the 'order' for each user
+This project is meant to demonstrate my NestJS skills and understanding of web development with graphQL.
+
+There should be two main items in the database, users and products.
+
+The users should have certain properties, including an 'order', which contains a list of products.
+
+You should be able to insert data to Users, and Product entities using the mutations.
+
+Additionally, you can query the entire list of users and see the products in the 'order' for each user.
+
 When the app has been started, it should be available here: http://localhost:3000/graphql
+
 Further schema and documentation can be found by clicking on 'schema' or 'docs' on the right hand side of the page in your browser
 
 ## Set up
